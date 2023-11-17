@@ -17,39 +17,51 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     line-height: 1.5em;
-}
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper {
+    width: 100%;
+    height: 80%;
+    padding: 50px 50px;
+}
 .container {
-    max-width: 600px;
+    max-width: 1600px;
     margin: 50px auto;
     padding: 20px;
 
     background: var(--second-color);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.444) 15px 20px 250px;
+    box-shadow: -4px 4px 4px 2px rgba(0, 0, 0, 0.288);
 }
-form input, form label, form button {
-    display: block;
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 36px;
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.288);;
+}
+.relogio {
     width: 100%;
-    margin-bottom: 5px;
-    border-radius: 15px;
-
-}
-form input {
-    background: rgba(202, 202, 202, 0.195);
-}
-
-form input {
-    font-size: 18px;
-    height: 50px;
-    padding: 0 20px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(226, 226, 226, 0.734);
+    border-radius: 5px;
+    background-color: rgba(226, 226, 226, 0.345);
 }
 
-form input:focus {
-    outline: 1px solid var(--primary-color);
-}
 
-form button {
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 26px ;
+}
+button{
     border: none;
     background-color: var(--primary-color);
     color: #fff;
@@ -59,25 +71,20 @@ form button {
     padding: 15px;
     cursor: pointer;
     margin-top: 30px;
+
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.288);
+    
 }
 
-form button:hover {
+.buttons button:hover {
     background: var(--primary-color-dark);
     outline: 2px solid var(--primary-color-dark);
-}
-
-.paragrafo-resultado, .bad {
-    background: #00ff227d;
-    padding: 10px 20px;
-}
-
-.bad {
-    background: rgba(255, 0, 0, 0.493);
 }
 
 .relogio {
     font-size: 3em;
 }
 .pausado {
-    color: red;
+    color: rgba(255, 0, 0, 0.74);
 }
